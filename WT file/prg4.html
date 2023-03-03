@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list-of-students">
+        ROLL CALL FOR THE LIST OF STUDENTS AS FOLLOWS:- <br>
+        <Button id="submit" onclick="printIt();">Rollcall-></Button>
+        <div id="content">
+
+        </div>
+    </div>
+    <script>
+        const content=document.getElementById('content');
+        const nxt=document.getElementById('submit');
+        var arr=["RAHUL","GEORGE","PRATAP","RUDRA","MANAV","KHYATI","ROSY","MANOJ"];
+       let a=0;
+       function printIt(){
+content.innerHTML+="</br>Is "+arr[a]+" present?";
+if(a==arr.length){
+    window.prompt("end of list");
+}
+else
+a=a+1;
+       }
+    </script>
+</body>
+</html>
